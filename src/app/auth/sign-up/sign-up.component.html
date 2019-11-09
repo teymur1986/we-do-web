@@ -64,5 +64,8 @@
             <mat-error>First Name is required.</mat-error>
         </mat-form-field>
         <button class="signUpSubmitBtn" type="submit" mat-raised-button color="primary">Sign</button>
+        <div class="signUpError" *ngIf="isSignError">
+            <p *ngFor="let s of signErrors; let i = index" >{{ s }}</p>
+        </div>
     </form>
 </section>

@@ -1,0 +1,38 @@
+.sidebar {
+    height: calc(100% - 100px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    border-right: 6px double #fff;
+    transition: 0.5s;
+    padding-top: 5%;
+  
+    &.closed {
+      width: 150px;
+    }
+
+    &.opened {
+      width: 250px;
+    }
+
+    .sidebarBtn,
+    .navigationLinks {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #fff;
+      display: block;
+    }
+    
+    .sidebarBtn {
+      text-align: right;
+    }
+
+    .navigationLinks {
+      transition: 0.3s;
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }

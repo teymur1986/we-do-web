@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class PagesComponent {
 
-  openSideNav = false;
+  isHeaderOpened = false;
 
   constructor() {}
 }

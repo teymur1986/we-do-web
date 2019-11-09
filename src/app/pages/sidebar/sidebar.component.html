@@ -1,0 +1,16 @@
+<div class="sidebar " [ngClass]="opened ?'opened':'closed'">
+    <a class="sidebarBtn" (click)="opened = !opened">
+        <mat-icon
+           *ngIf="!opened" >
+            menu
+        </mat-icon>
+        <mat-icon
+           *ngIf="opened" >
+           arrow_back
+        </mat-icon>
+    </a>
+    <a class="navigationLinks" href="#">About</a>
+    <a class="navigationLinks" href="#">Services</a>
+    <a class="navigationLinks" href="#">Clients</a>
+    <a class="navigationLinks" href="#">Contact</a>
+</div>
