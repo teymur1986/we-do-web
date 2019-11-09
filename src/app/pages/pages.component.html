@@ -1,0 +1,30 @@
+<mat-sidenav-container>
+    <mat-sidenav [opened]="openSideNav">
+        <p>Side nav</p>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <div fxFlex fxLayout fxLayoutAlign="flex-start">
+                <button mat-icon-button (click)="openSideNav = !openSideNav">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+            <div fxFlex fxLayout fxLayoutAlign="center">
+                <button mat-fab>We Do</button>
+            </div>
+            <div fxFlex fxLayout fxLayoutAlign="flex-end">
+                <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+                    <li>
+                        <a class="navigationLinkItem" routerLink="/signup" >Sign in</a>
+                    </li>
+                    <li>
+                        <a class="navigationLinkItem" routerLink="/login" >Login</a>
+                    </li>
+                </ul>
+            </div>
+        </mat-toolbar>
+        <main>
+            <router-outlet ></router-outlet>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -9,13 +9,15 @@ import { MaterialModule } from './material/material.module';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { LoginComponent } from './auth/login/login.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { PagesComponent } from './pages/pages.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     LoginComponent,
+    PagesComponent,
     DashboardComponent,
   ],
   imports: [

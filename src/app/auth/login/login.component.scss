@@ -1,0 +1,24 @@
+$login-container-height: 100%;
+$login-container-width: $login-container-height;
+$login-container-margin-top: 5%;
+$we-do-bottom-main-color: #2183d1;
+$we-do-top-main-color: #03bdf447;
+.login-container {
+    height: $login-container-height;
+    width: $login-container-width;
+    padding-top: $login-container-margin-top;
+    background-image: linear-gradient($we-do-top-main-color, $we-do-bottom-main-color);
+    .login-form {
+        
+        $login-form-input-fields-width: 450px;
+        mat-form-field {
+            width: $login-form-input-fields-width;
+        }
+
+        $login-form-btn-margin-top: 2%;
+        .loginSubmitBtn {
+            margin-top: $login-form-btn-margin-top;
+            width: $login-form-input-fields-width;
+        }
+    }
+}

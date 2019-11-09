@@ -1,0 +1,25 @@
+mat-sidenav-container, mat-sidenav-content {
+    height: 100%;
+}
+
+mat-sidenav {
+    width: 250px;
+}
+
+.navigation-items{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .navigationLinkItem {
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 1px solid transparent;
+        text-align: center;
+    
+    
+        &:hover,
+        &:active {
+            border-bottom: 1px solid #fff;
+        }
+    }
+}
