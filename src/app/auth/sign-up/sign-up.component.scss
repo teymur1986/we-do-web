@@ -1,0 +1,24 @@
+$signup-container-height: 100%;
+$signup-container-width: $signup-container-height;
+$signup-container-margin-top: 5%;
+$we-do-bottom-main-color: #2183d1;
+$we-do-top-main-color: #03bdf447;
+.signup-container {
+    height: $signup-container-height;
+    width: $signup-container-width;
+    padding-top: $signup-container-margin-top;
+    background-image: linear-gradient($we-do-top-main-color, $we-do-bottom-main-color);
+    .signup-form {
+        
+        $signup-form-input-fields-width: 450px;
+        mat-form-field {
+            width: $signup-form-input-fields-width;
+        }
+
+        $signup-form-btn-margin-top: 2%;
+        .signUpSubmitBtn {
+            margin-top: $signup-form-btn-margin-top;
+            width: $signup-form-input-fields-width;
+        }
+    }
+}
